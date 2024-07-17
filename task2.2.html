@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+    <link rel="stylesheet" href="task2.2.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img src="logo.jpg" alt="logo"></div>
+            <div class="menu-icon" id="menu-icon">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul id="nav-links" class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="home" class="section">
+        <h2>Welcome to Our Website</h2>
+        <p>Internship Program</p>
+    </div>
+    <div id="about" class="section">
+        <h2>About Us</h2>
+        <h3>Informtion about our company</h3>
+        <p>Cognifyz Technologies is a leading technology company that
+            specializes in the dynamic field of data science and excels in
+            delivering impactful projects and solutions.</p>
+    </div>
+    <div id="services" class="section">
+        <h2>Our Services</h2>
+        <h3>Details of the services we offer</h3>
+        <p>The company offers a wide range of products and services,
+            including artificial intelligence (AI), machine learning (ML), and
+            data analytics tools.</p>
+            <p>Cognifyz Technologies also provides training programs to
+                enhance skills and knowledge in these areas.</p>
+    </div>
+    <div id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p>How to get in touch.</p>
+    </div>
+    </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", () =>{
+            let menuIcon = document.getElementById("menu-icon");
+            let navLinks= document.getElementById("nav-links");
+
+            menuIcon.addEventListener("click", () =>{
+                menuIcon.classList.toggle("active");
+                navLinks.classList.toggle("active");
+            });
+        })
+    </script>
+</body>
+</html>
