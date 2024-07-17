@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Changer</title>
+    <style>
+    #btn{
+        height: 50px;
+        width: 200px;
+        background-color: blue;
+        color: white;
+        font-size: 20px;
+        font-weight: 600;
+        outline: auto;
+        border-radius: 5px;
+    }
+    </style>
+</head>
+<body>
+    <button id="btn">Color Changer</button>
+    <script>
+let btn=document.getElementById("btn");
+btn.addEventListener("click", ()=>{
+ btn.style.backgroundColor="orange";
+})
+
+// alert box
+
+alert(`hii, good morning! ${Date()}`);
+
+let num1= parseInt(prompt("enter first number"));
+let num2= parseInt(prompt("enter second number"));
+
+function addNum(){
+    let result= num1+ num2;
+    document.write(result);
+}
+addNum();
+
+    </script>
+</body>
+</html>
